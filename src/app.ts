@@ -1,10 +1,10 @@
-import express, { Request, Response } from "express";
+import express, { Application, Request, Response } from "express";
 import { ProductRoutes } from "./app/modules/products/products.Routes";
 import { OrderRoutes } from "./app/modules//order/order.Routes";
 // import { MovieRoutes } from "./modules/movies/movies.route";
 import cors from "cors";
 
-const app = express();
+const app:Application = express();
 app.use(cors());
 
 

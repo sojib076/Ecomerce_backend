@@ -47,7 +47,24 @@ routes:
 Thanks for reading 
 
 Live Demo: [Ecomer Backend API](ecombackend-ecru.vercel.app)
+
+
+
+
+
+``` 
+Test Orer Data 
+``` 
+```json
+{
+    "email": "level2@programming-hero.com",
+    "productId": "664c9c00f4c33529dddddca8",
+    "price": 999,
+    "quantity": 5
+}
 ```
+```
+
 
 
 

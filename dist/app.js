@@ -7,11 +7,13 @@ const express_1 = __importDefault(require("express"));
 const products_Routes_1 = require("./app/modules/products/products.Routes");
 const order_Routes_1 = require("./app/modules//order/order.Routes");
 // import { MovieRoutes } from "./modules/movies/movies.route";
+const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)());
 //parsers
 app.use(express_1.default.json());
 app.get("/", (req, res) => {
-    res.send("Hello Next!");
+    res.send(" Please hit the route api/orders or products to see data!");
 });
 app.use("/api/products", products_Routes_1.ProductRoutes);
 app.use("/api/orders", order_Routes_1.OrderRoutes);
