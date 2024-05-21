@@ -2,7 +2,9 @@ import { orderService } from "./order.Services";
 import { Request, Response } from "express";
 import { createOrderValidator } from "./order.Validator";
 
+
 const createOrder = async (req: Request, res: Response) => {
+
   const data = req.body;
   try {
     const ValidateData = createOrderValidator.parse(data);
@@ -12,7 +14,7 @@ const createOrder = async (req: Request, res: Response) => {
       message: "Order created successfully!",
       data: result,
     });
-  } catch (e: any) {
+  } catch (e :any) {
     res.status(400).json({
       success: false,
       message: e?.message,
