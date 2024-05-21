@@ -53,18 +53,45 @@ Live Demo: [Ecomer Backend API](ecombackend-ecru.vercel.app)
 
 
 ``` 
-Test Orer Data 
+Test Odrer Data 
 ``` 
 ```json
 {
     "email": "level2@programming-hero.com",
-    "productId": "664c9c00f4c33529dddddca8",
+    "productId": "664c9c00f4c33529dddddca8", // 1st create product then get the id 
     "price": 999,
     "quantity": 5
 }
 ```
 ```
 
+``` 
+Test Odrer Data 
+``` 
+```json
+{
+    "name": "samsumg S5",
+    "description": "samsumg is best moblie phone outthere sleekpp and powerful smartphone with cutting-edge features.",
+    "price": 999,
+    "category": "Electronics",
+    "tags": ["smartphone", "Apple", "iOS"],
+    "variants": [
+        {
+            "type": "Color",
+            "value": "Midnight Blue"
+        },
+        {
+            "type": "Storage Capacity",
+            "value": "256GB"
+        }
+    ],
+    "inventory": {
+        "quantity": 50,
+        "inStock": true
+    }
+}
+``` 
+```
 
 
 
