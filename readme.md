@@ -52,9 +52,45 @@ Live Demo: [Ecomer Backend API](ecombackend-ecru.vercel.app)
 
 
 
+
+
+
+
 ``` 
-Test Orer Data 
+Test Product Data 
+
 ``` 
+```json
+
+{
+    "name": "samsumg S5",
+    "description": "samsumg is best moblie phone outthere sleekpp and powerful smartphone with cutting-edge features.",
+    "price": 999,
+    "category": "Electronics",
+    "tags": ["smartphone", "Apple", "iOS"],
+    "variants": [
+        {
+            "type": "Color",
+            "value": "Midnight Blue"
+        },
+        {
+            "type": "Storage Capacity",
+            "value": "256GB"
+        }
+    ],
+    "inventory": {
+        "quantity": 50,
+        "inStock": true
+    }
+}
+
+``` 
+
+``` 
+
+``` 
+Test ORder data  Data 
+
 ```json
 {
     "email": "level2@programming-hero.com",
@@ -63,9 +99,6 @@ Test Orer Data
     "quantity": 5
 }
 ```
-```
-
-
-
+``` 
 
 
