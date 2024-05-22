@@ -69,11 +69,11 @@ const updateProduct = (req, res) => __awaiter(void 0, void 0, void 0, function* 
     const data = req.body;
     const validatedProduct = products_Validator_1.productSchema.parse(data);
     try {
-        yield products_Services_1.ProductsService.updateProduct(productId, validatedProduct);
+        const result = yield products_Services_1.ProductsService.updateProduct(productId, validatedProduct);
         res.status(200).json({
             success: true,
             message: "Product updated successfully!",
-            data: data,
+            data: result,
         });
     }
     catch (err) {
@@ -100,21 +100,6 @@ const deleteProduct = (req, res) => __awaiter(void 0, void 0, void 0, function* 
         });
     }
 });
-// const searchProducts = async (req: Request, res: Response) => {
-//   try {
-//     const result = await ProductsService.searchProducts(search);
-//     res.status(200).json({
-//       success: true,
-//       message: "Products fetched successfully!",
-//       data: result,
-//     });
-//   } catch (err) {
-//     res.status(500).json({
-//       success: false,
-//       message: "Products Not Found!",
-//     });
-//   }
-// };
 exports.ProductsController = {
     createProduct,
     getProducts,

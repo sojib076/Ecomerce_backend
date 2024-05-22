@@ -61,11 +61,11 @@ const updateProduct = async (req: Request, res: Response) => {
   const data = req.body;
   const validatedProduct = productSchema.parse(data);
   try {
-    await ProductsService.updateProduct(productId, validatedProduct);
+ const result =    await ProductsService.updateProduct(productId, validatedProduct);
     res.status(200).json({
       success: true,
       message: "Product updated successfully!",
-      data: data,
+      data: result,
     });
   } catch (err) {
     res.status(500).json({
@@ -91,22 +91,7 @@ const deleteProduct = async (req: Request, res: Response) => {
   }
 };
 
-// const searchProducts = async (req: Request, res: Response) => {
 
-//   try {
-//     const result = await ProductsService.searchProducts(search);
-//     res.status(200).json({
-//       success: true,
-//       message: "Products fetched successfully!",
-//       data: result,
-//     });
-//   } catch (err) {
-//     res.status(500).json({
-//       success: false,
-//       message: "Products Not Found!",
-//     });
-//   }
-// };
 
 export const ProductsController = {
   createProduct,
