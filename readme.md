@@ -53,9 +53,6 @@ Live Demo: [Ecomer Backend API](ecombackend-ecru.vercel.app)
 
 
 
-
-
-
 ``` 
 Test Product Data 
 
@@ -89,7 +86,7 @@ Test Product Data
 ``` 
 
 ``` 
-Test ORder data  Data 
+Test Order data  Data 
 
 ```json
 {
