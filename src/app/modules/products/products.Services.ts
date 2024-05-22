@@ -23,7 +23,6 @@ const getProduct = async (productId: string) => {
   return result;
 };
 const updateProduct = async (productId: string, data: object) => {
-  
   const result = await ProductModel.findOneAndUpdate({ _id: productId }, data, {
     new: true,
   });
