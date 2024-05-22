@@ -23,8 +23,10 @@ const getProduct = async (productId: string) => {
   return result;
 };
 const updateProduct = async (productId: string, data: object) => {
-  const result = await ProductModel.updateOne({ _id: productId }, data); // update the product by the id
-  return result;
+ const result = await ProductModel.findOneAndUpdate({ _id: productId }, data, {
+    new: true,
+  });
+  return result
 };
 
 const deleteProduct = async (productId: string) => {
