@@ -26,9 +26,7 @@ const updateProduct = async (productId: string, data: object) => {
   const result = await ProductModel.findOneAndUpdate({ _id: productId }, data, {
     new: true,
   });
-  
-  return result;
-
+  return result
 };
 
 const deleteProduct = async (productId: string) => {
