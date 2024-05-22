@@ -82,8 +82,8 @@ Test Product Data
 ``` 
 
 ``` 
-Test ORder data  Data 
-``` 
+Test Order data  Data 
+
 ```json
 {
     "email": "level2@programming-hero.com",
@@ -93,7 +93,4 @@ Test ORder data  Data
 }
 ```
 ``` 
-
-``` 
-```
 
